@@ -4,32 +4,32 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Coffee<span>.</span>co</h1>
+        <h1 className="footer__title">Segerin</h1>
         <p className="footer__description">
-          The best place to work <br />
-          and be more productive.
+          Ur healthy life <br />
+          Start from here.
         </p>
 
         <div className="footer__content grid">
           <div className="footer__data">
             <h2 className="footer__subtitle">Address</h2>
             <p className="footer__information">
-              Street no.19 Lombok <br />
-              mataram. 003
+              Binus alam sutera, Tangerang <br />
+              Selasar gor, meja 4
             </p>
           </div>
           <div className="footer__data">
             <h2 className="footer__subtitle">Contact</h2>
             <p className="footer__information">
-              +987654321 <br />
-              coffee@email.com
+              +62 812-1245-8200 <br />
+              segerinnn@email.com
             </p>
           </div>
           <div className="footer__data">
-            <h2 className="footer__subtitle">Office</h2>
+            <h2 className="footer__subtitle">Grand Opening</h2>
             <p className="footer__information">
-              Monday - Saturday <br />
-              9AM - 10PM
+              Friday <br />
+              1PM - 4PM
             </p>
           </div>
           <div className="footer__data">
@@ -52,18 +52,15 @@ const Footer = () => {
 
         <div className="footer__group">
           <ul className="footer__social">
-            <a href="#" target="_blank" className="footer__social-link">
-              <i className="bx bxl-facebook"></i>
+            <a href="#gmail" target="_blank" className="footer__social-link">
+              <i className="bx bxl-gmail"></i>
             </a>
-            <a href="#" target="_blank" className="footer__social-link">
+            <a href="#instagram" target="_blank" className="footer__social-link">
               <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" target="_blank" className="footer__social-link">
-              <i className="bx bxl-tiktok"></i>
             </a>
           </ul>
 
-          <span className="footer__copy"> &#169; ypcode. All rigths reserved </span>
+          <span className="footer__copy"> &#169; 2023 Segerin. All rigths reserved.</span>
         </div>
       </div>
     </footer>

@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="nav container">
         <div className="logo__container">
           <a href="#home" className="nav__logo">
-            <img className="nav__icon" src="./media/logo.png" alt="Logo" />
+            <img className="nav__icon" src="./media/segerin-logo.png" alt="Logo" />
           </a>
           <a href="#home" className="nav__logo">
             Segerin

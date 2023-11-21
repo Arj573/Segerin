@@ -13,8 +13,7 @@ const orderNow = () => {
   >
     <h1 className="hero__title">
       Start Your Day <br />
-      With Favorite Coffee <br />
-      And Cozy Place.
+      with <br/> SEGERIN
     </h1>
     <button className="hero__button" onClick={orderNow}>Order Now</button>
   </section>

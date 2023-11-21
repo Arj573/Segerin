@@ -1,3 +1,5 @@
+import React, {useEffect} from 'react';
+
 const Hero = () => {
 const orderNow = () => {
     window.scrollTo({
@@ -6,18 +8,23 @@ const orderNow = () => {
     })
 }
 
-    return <section
+    return  (
+    <div data-aos="fade-down-right">
+    <section
     className="hero section"
     id="home"
-    style={{backgroundImage: 'url(./media/bg-hero.jpg)'}}
+    style={{backgroundImage: 'url(./media/hero-bg.jpg)'}}
   >
+    
     <h1 className="hero__title">
-      Start Your Day <br />
-      With Favorite Coffee <br />
-      And Cozy Place.
+      Get Your Day <br />
+      With Healthy drink <br />
+      Make ur life good.
     </h1>
-    <button className="hero__button" onClick={orderNow}>Order Now</button>
+    <button className="hero__button" onClick={orderNow}>Order Now</button> 
   </section>
+  </div>
+  )
 }
 
 export default Hero;

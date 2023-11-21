@@ -1,9 +1,11 @@
+
 const Special = () => {
     return <div className="special section container" id="special">
+    
     <div className="special__container">
       <div className="special__box">
         <h2 className="section__title">
-          Best coffees that make you <br />
+          Healthy drink that make you <br />
           happy and cheer you up!
         </h2>
       </div>
@@ -17,9 +19,9 @@ const Special = () => {
               className="special__img"
             />
           </div>
-          <h3 className="special__title">Original Coffee</h3>
+          <h3 className="special__title">Fresh fruits and vegetables</h3>
           <p className="special__description">
-            We select the best beans coffee, for a true taste.
+            We select the best fruits and vegetables, for optimal health quality.
           </p>
         </div>
         <div className="special__group">

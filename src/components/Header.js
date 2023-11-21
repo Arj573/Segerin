@@ -1,48 +1,78 @@
-import {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
-    const [changeHeader, setChangeHeader] = useState(false);
-    
-    const changeHeaderColor = () => {
-    if(window.scrollY >= 50) {
-        setChangeHeader(true)
+  const [changeHeader, setChangeHeader] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const changeHeaderColor = () => {
+    if (window.scrollY >= 50) {
+      setChangeHeader(true);
     } else {
-         setChangeHeader(false)
+      setChangeHeader(false);
     }
-    }
+  };
 
-    window.addEventListener('scroll', changeHeaderColor)
+  useEffect(() => {
+    window.addEventListener('scroll', changeHeaderColor);
+    return () => {
+      window.removeEventListener('scroll', changeHeaderColor);
+    };
+  }, []);
 
-    return <header className={`header ${changeHeader && 'scroll-header'}`} id="header">
-    <nav className="nav container">
-      <a href="#home" className="nav__logo">Coffee<span>.</span>co </a>
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
-      <div className="nav__menu" id="nav-menu">
-        <ul className="nav__list">
-          <li className="nav__item">
-            <a href="#home" className="nav__link active-link">Home</a>
-          </li>
-          <li className="nav__item">
-            <a href="#products" className="nav__link">Products</a>
-          </li>
-          <li className="nav__item">
-            <a href="#place" className="nav__link">Place</a>
-          </li>
-          <li className="nav__item">
-            <a href="#blog" className="nav__link">Blog</a>
-          </li>
-        </ul>
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
 
-        <div className="nav__close" id="nav-close">
-          <i className="bx bx-x"></i>
+  return (
+    <header className={`header ${changeHeader && 'scroll-header'}`} id="header">
+      <nav className="nav container">
+        <div className="logo__container">
+          <a href="#home" className="nav__logo">
+            <img className="nav__icon" src="./media/logo.png" alt="Logo" />
+          </a>
+          <a href="#home" className="nav__logo">
+            Segerin
+          </a>
         </div>
-      </div>
+        <div className={`nav__menu ${isNavOpen ? 'open' : ''}`} id="nav-menu">
+          <ul className="nav__list">
+            <li className="nav__item">
+              <a href="#home" className="nav__link active-link" onClick={closeNav}>
+                Home
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#products" className="nav__link" onClick={closeNav}>
+                Products
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#place" className="nav__link" onClick={closeNav}>
+                Place
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#blog" className="nav__link" onClick={closeNav}>
+                Blog
+              </a>
+            </li>
+          </ul>
 
-      <div className="nav__toggle" id="nav-toggle">
-        <i className="bx bx-grid-alt"></i>
-      </div>
-    </nav>
-  </header>
+          <div className="nav__close" id="nav-close" onClick={toggleNav}>
+            <i className="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div className="nav__toggle" id="nav-toggle" onClick={toggleNav}>
+          <i className="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;

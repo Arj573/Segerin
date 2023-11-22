@@ -3,29 +3,29 @@
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Pizza Macaroni",
-      "price": "8",
+      "title": "Strawbery carrot orange",
+      "price": "10,499",
       "imageUrl": "./media/main-menu1.jpg"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Burger beef special",
-      "price": "9",
+      "title": "Melon Lemon Cucumber",
+      "price": "11k",
       "imageUrl": "./media/main-menu2.jpg"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Burger vegetarian",
-      "price": "10",
+      "title": "Lemon Honey pineapple",
+      "price": "12k",
       "imageUrl": "./media/main-menu3.jpg"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Burger vegetarian special",
-      "price": "12",
+      "title": "Spinach Pineapple Guava",
+      "price": "10k",
       "imageUrl": "./media/main-menu4.jpg"
     },
     {
@@ -81,7 +81,7 @@
   "places": [
     {
       "_id": "abc123",
-      "imageUrl": "./media/place1.jpg"
+      "imageUrl": "./media/game1.jpg"
     },
     {
       "_id": "abc123",

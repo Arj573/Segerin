@@ -24,12 +24,12 @@ const orderNow = () => {
     style={{backgroundImage: 'url(./media/hero-bg.jpg)'}}
   >
     
-    <h1 className="hero__title" data-aos="fade-up">
+    <h1 className="hero__title" data-aos="fade-down" data-aos-duration="3000">
       Get Your Day <br />
       With Healthy drink <br />
-      Make ur life good.
+      Make ur good life.
     </h1>
-    <button className="hero__button" onClick={orderNow} data-aos="fade-up">Order Now</button> 
+    <button className="hero__button" onClick={orderNow} data-aos="fade-down" data-aos-duration="3000">Order Now</button> 
   </section>
   )
 }

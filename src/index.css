@@ -281,6 +281,7 @@ button {
   z-index: 99;
 }
 
+
 .hero__title {
   text-align: center;
   color: #fff;
@@ -472,6 +473,9 @@ button {
 
 .blog__img {
   border-radius: 0.5rem;
+  object-fit: cover;
+  width: 450px;
+  height: 300px;
 }
 
 .blog__button {
@@ -533,6 +537,19 @@ button {
 
 .blog__reaction span {
   font-size: var(--small-font-size);
+}
+.map__container{
+  width: 100%;
+  height: 400px; /* Set a specific height for the map container */
+  margin-top: 2rem;
+  background-color: #261111;
+  object-fit: cover;
+}
+
+.map{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* end */
 
@@ -768,12 +785,40 @@ button {
 
   .blog__container {
     padding-bottom: 5rem;
+    width: 100%;
   }
 
   .blog__content {
     grid-template-columns: repeat(2, 450px);
     column-gap: 5rem;
     padding-top: 2rem;
+  }
+
+  .map__container{
+    width: 20%;
+    height: 400px; /* Set a specific height for the map container */
+    margin-top: 2rem;
+    background-color: #261111;
+    object-fit: cover;
+  }
+
+  .map{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .map__container{
+    width: 100%;
+    height: 400px; /* Set a specific height for the map container */
+    margin-top: 2rem;
+    background-color: #261111;
+    object-fit: cover;
+  }
+
+  .map{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .footer__content {

@@ -7,13 +7,13 @@ const Place = () => {
   return (
     <section className="place section" id="place">
     <div className="place__container container">
-      <h2 className="section__title">
+      <h2 className="section__title" data-aos="fade-left" data-aos-duration="3000">
         Make you feels good With <br />
-        our comfy fasilities
+        our special games and reward
       </h2>
 
-      <div className="place__content grid">
-        <div className="place__images">
+      <div className="place__content grid" data-aos="fade-right" data-aos-duration="3000">
+        <div className="place__images" >
           <img
             src={selectedImage}
             alt=""
@@ -36,10 +36,10 @@ const Place = () => {
         </div>
 
         <div className="place__data">
-          <h2 className="place__title">Find a place you love</h2>
+          <h2 className="place__title">Show your skills here and get attractive rewards</h2>
           <p className="place__description">
-            We provide the best place to stay productive <br />
-            and focus with good vibes and beautiful design.
+          Special rewards for those of you who can win the game,<br />
+          in the form of vouchers, fresh products or special prizes.
           </p>
         </div>
       </div>

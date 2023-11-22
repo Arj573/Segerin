@@ -1,20 +1,32 @@
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Special = () => {
-    return <div className="special section container" id="special">
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 800, // Adjust the duration as needed
+      easing: 'ease-in-out', // Specify the easing function
+    });
+  }, []);
+    return ( 
+    <div className="special section container" id="special">
     
-    <div className="special__container">
-      <div className="special__box">
-        <h2 className="section__title">
+    <div className="special__container" >
+      <div className="special__box" data-aos="fade-right" data-aos-easing="linear"
+     data-aos-duration="3000">
+        <h2 className="section__title" >
           Healthy drink that make you <br />
           happy and cheer you up!
         </h2>
       </div>
 
-      <div className="special__category">
+      <div className="special__category" data-aos="fade-up-right" data-aos-duration="2000">
         <div className="special__group">
           <div className="special__img__border">
             <img
-              src="./media/coffee-beans.png"
+              src="./media/vegetables.png"
               alt=""
               className="special__img"
             />
@@ -27,32 +39,33 @@ const Special = () => {
         <div className="special__group">
           <div className="special__img__border">
             <img
-              src="./media/hot-drink.png"
+              src="./media/mixing.png"
               alt=""
               className="special__img"
             />
           </div>
-          <h3 className="special__title">Hot Coffee</h3>
+          <h3 className="special__title">Mix your taste</h3>
           <p className="special__description">
-            Enjoy your coffee with some hot with true taste.
+          enjoy fruit and vegetables of your choice.
           </p>
         </div>
         <div className="special__group">
           <div className="special__img__border">
             <img
-              src="./media/coffee-cup.png"
+              src="./media/sugar.png"
               alt=""
               className="special__img"
             />
           </div>
-          <h3 className="special__title">Ice Coffee</h3>
+          <h3 className="special__title">Sweet control</h3>
           <p className="special__description">
-            Enjoy your coffee with some ice wtih true taste.
+          Determine the sweetness level according to what you are interested in.
           </p>
         </div>
       </div>
     </div>
   </div>
+    );
 }
 
 export default Special;

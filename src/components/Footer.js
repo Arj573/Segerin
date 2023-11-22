@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__container container">
+      <div className="footer__container container" data-aos="fade-left" data-aos-duration="3000">
         <h1 className="footer__title">Segerin</h1>
         <p className="footer__description">
           Ur healthy life <br />
@@ -52,10 +52,7 @@ const Footer = () => {
 
         <div className="footer__group">
           <ul className="footer__social">
-            <a href="#gmail" target="_blank" className="footer__social-link">
-              <i className="bx bxl-gmail"></i>
-            </a>
-            <a href="#instagram" target="_blank" className="footer__social-link">
+            <a href="https://www.instagram.com/seger_inn/" target="_blank" className="footer__social-link">
               <i className="bx bxl-instagram"></i>
             </a>
           </ul>

@@ -46,7 +46,7 @@ const Header = () => {
                 </li>
                 <li className="nav__item">
                   <a href="#place" className="nav__link" onClick={closeNav}>
-                    Place
+                    Features
                   </a>
                 </li>
                 <li className="nav__item">

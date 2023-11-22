@@ -7,12 +7,12 @@ const Product = () => {
   return (
     <section className="products section" id="products">
         <div className="products__container container">
-          <h2 className="section__title">
+          <h2 className="section__title" data-aos="fade-up" data-aos-duration="3000">
             Find delicious food and <br />
             choose what you love
           </h2>
 
-          <ul className="products__filters">
+          <ul className="products__filters" data-aos="fade-left" data-aos-duration="3000">
             <li
               className={`products__item products__line ${filter === 'main-menu' &&'active-product'}`}
               onClick={() => setFilter('main-menu')}
@@ -21,18 +21,18 @@ const Product = () => {
               <h3 className="products__title">Main Menu</h3>
               <span className="products__stock">4 products</span>
             </li>
-            <li className={`products__item products__line ${filter === 'coffee' &&'active-product'}`} 
+            {/* <li className={`products__item products__line ${filter === 'coffee' &&'active-product'}`} 
             onClick={() => setFilter('coffee')} data-filter=".coffee">
               <h3 className="products__title">Coffee</h3>
               <span className="products__stock">4 products</span>
-            </li>
+            </li> */}
             <li className={`products__item products__line ${filter === 'desserts' &&'active-product'}`} onClick={() => setFilter('desserts')} data-filter=".cake">
               <h3 className="products__title">Desserts</h3>
               <span className="products__stock">4 products</span>
             </li>
           </ul>
 
-          <div className="products__content grid">
+          <div className="products__content grid" data-aos="fade-down" data-aos-duration="3000">
             {data.categories.map((category, index)=> {
               return (
               category.category === filter && <article className="products__card main-menu">
@@ -44,7 +44,7 @@ const Product = () => {
                 />
               </div>
               <div className="products__data">
-                <h2 className="products__price">${category.price}</h2>
+                <h2 className="products__price">Rp{category.price}</h2>
                 <h3 className="products__name">${category.title}</h3>
 
                 <button className="button products__button">

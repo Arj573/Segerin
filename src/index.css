@@ -55,6 +55,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1,

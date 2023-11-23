@@ -41,6 +41,7 @@ const Place = () => {
           Special rewards for those of you who can win the game,<br />
           in the form of vouchers, fresh products or special prizes.
           </p>
+          <div> Regist here: <a href='https://docs.google.com/forms/d/e/1FAIpQLSfOGCT3cMlM4j87KjZrqzBIVKCgiNmTY2DgmtN8ewPqQZVU9A/viewform' target="_blank">Segerin-Event-2023</a></div>
         </div>
       </div>
     </div>

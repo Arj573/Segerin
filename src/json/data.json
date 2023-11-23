@@ -4,7 +4,7 @@
       "_id": "abc123",
       "category": "main-menu",
       "title": "Berry Splash",
-      "price": "10,499",
+      "price": "9,999",
       "imageUrl": "./media/straw.png",
       "komposisi":" Strawberry, jeruk dan wortel"
     },
@@ -12,53 +12,25 @@
       "_id": "abc123",
       "category": "main-menu",
       "title": "Melon Cooler",
-      "price": "11k",
+      "price": "9,999",
       "imageUrl": "./media/melon.png",
       "komposisi":" Melon, lemon dan timun"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Lemon Twist",
-      "price": "12k",
+      "title": "Apple Twist",
+      "price": "9,999",
       "imageUrl": "./media/pineap.jpg",
-      "komposisi":" Lemon, madu dan nanas"
+      "komposisi":" Lemon, madu dan Apel"
     },
     {
       "_id": "abc123",
-      "category": "main-menu",
+      "category": "desserts",
       "title": "Guava delight",
-      "price": "10k",
+      "price": "9,999",
       "imageUrl": "./media/guavadelight.jpg",
       "komposisi":" Jambu air, bayam, dan nanas"
-    },
-    {
-      "_id": "abc123",
-      "category": "desserts",
-      "title": "Cake Special",
-      "price": "12",
-      "imageUrl": "./media/dessert1.jpg"
-    },
-    {
-      "_id": "abc123",
-      "category": "desserts",
-      "title": "Pupcake Special",
-      "price": "10",
-      "imageUrl": "./media/dessert2.jpg"
-    },
-    {
-      "_id": "abc123",
-      "category": "desserts",
-      "title": "Brownis",
-      "price": "8",
-      "imageUrl": "./media/dessert3.jpg"
-    },
-    {
-      "_id": "abc123",
-      "category": "desserts",
-      "title": "Cup Cake",
-      "price": "15",
-      "imageUrl": "./media/dessert4.jpg"
     }
   ],
   "places": [
@@ -68,11 +40,12 @@
     },
     {
       "_id": "abc123",
-      "imageUrl": "./media/place2.jpg"
+      "imageUrl": "./media/game2.jpg"
     },
     {
       "_id": "abc123",
-      "imageUrl": "./media/place3.jpg"
+      "imageUrl": "./media/game3.jpg"
     }
+
   ]
 }

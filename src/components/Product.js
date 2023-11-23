@@ -19,7 +19,7 @@ const Product = () => {
               data-filter=".delicacies"
             >
               <h3 className="products__title">Main Menu</h3>
-              <span className="products__stock">4 products</span>
+              <span className="products__stock">3 products</span>
             </li>
             {/* <li className={`products__item products__line ${filter === 'coffee' &&'active-product'}`} 
             onClick={() => setFilter('coffee')} data-filter=".coffee">
@@ -27,8 +27,8 @@ const Product = () => {
               <span className="products__stock">4 products</span>
             </li> */}
             <li className={`products__item products__line ${filter === 'desserts' &&'active-product'}`} onClick={() => setFilter('desserts')} data-filter=".cake">
-              <h3 className="products__title">Desserts</h3>
-              <span className="products__stock">4 products</span>
+              <h3 className="products__title">Coming soon</h3>
+              <span className="products__stock">1 products</span>
             </li>
           </ul>
 

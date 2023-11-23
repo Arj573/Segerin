@@ -3,51 +3,34 @@
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Strawbery carrot orange",
+      "title": "Berry Splash",
       "price": "10,499",
-      "imageUrl": "./media/main-menu1.jpg"
+      "imageUrl": "./media/straw.png",
+      "komposisi":" Strawberry, jeruk dan wortel"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Melon Lemon Cucumber",
+      "title": "Melon Cooler",
       "price": "11k",
-      "imageUrl": "./media/main-menu2.jpg"
+      "imageUrl": "./media/melon.png",
+      "komposisi":" Melon, lemon dan timun"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Lemon Honey pineapple",
+      "title": "Lemon Twist",
       "price": "12k",
-      "imageUrl": "./media/main-menu3.jpg"
+      "imageUrl": "./media/pineap.jpg",
+      "komposisi":" Lemon, madu dan nanas"
     },
     {
       "_id": "abc123",
       "category": "main-menu",
-      "title": "Spinach Pineapple Guava",
+      "title": "Guava delight",
       "price": "10k",
-      "imageUrl": "./media/main-menu4.jpg"
-    },
-    {
-      "_id": "abc123",
-      "category": "coffee",
-      "title": "Cappucino Late",
-      "price": "5",
-      "imageUrl": "./media/coffee.jpg"
-    },
-    {
-      "_id": "abc123",
-      "category": "coffee",
-      "title": "Cappucino Original",
-      "price": "7",
-      "imageUrl": "./media/coffee2.jpg"
-    },
-    {
-      "_id": "abc123",
-      "category": "coffee",
-      "title": "Cappucino Ice",
-      "price": "8",
-      "imageUrl": "./media/coffee3.jpg"
+      "imageUrl": "./media/guavadelight.jpg",
+      "komposisi":" Jambu air, bayam, dan nanas"
     },
     {
       "_id": "abc123",

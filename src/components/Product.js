@@ -7,12 +7,12 @@ const Product = () => {
   return (
     <section className="products section" id="products">
         <div className="products__container container">
-          <h2 className="section__title" data-aos="fade-up" data-aos-duration="3000">
-            Find delicious food and <br />
+          <h2 className="section__title" data-aos="fade-up" data-aos-duration="1500">
+            Find healthy drink and <br />
             choose what you love
           </h2>
 
-          <ul className="products__filters" data-aos="fade-left" data-aos-duration="3000">
+          <ul className="products__filters" data-aos="fade-left" data-aos-duration="2000">
             <li
               className={`products__item products__line ${filter === 'main-menu' &&'active-product'}`}
               onClick={() => setFilter('main-menu')}
@@ -32,7 +32,7 @@ const Product = () => {
             </li>
           </ul>
 
-          <div className="products__content grid" data-aos="fade-down" data-aos-duration="3000">
+          <div className="products__content grid" data-aos="fade-down" data-aos-duration="2000">
             {data.categories.map((category, index)=> {
               return (
               category.category === filter && <article className="products__card main-menu">
@@ -44,9 +44,17 @@ const Product = () => {
                 />
               </div>
               <div className="products__data">
-                <h2 className="products__price">Rp{category.price}</h2>
-                <h3 className="products__name">${category.title}</h3>
-
+                <h2 className="products__name"> {category.title}</h2>
+                <h3 className="products__price">Rp{category.price}</h3>
+                <div className="products__description">
+                <div className="products__komposisi">Komposisi:</div>
+                <div className="komposisi_list">
+                <div>•</div>
+                <div className='list_komp'>{category.komposisi}</div>
+                </div>
+                
+                
+                </div>
                 <button className="button products__button">
                   <i className="bx bx-shopping-bag"></i>
                 </button>

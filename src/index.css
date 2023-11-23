@@ -15,6 +15,7 @@
   --text-color-light: hsl(206, 4%, 75%);
   --body-color: hsl(206, 4%, 97%);
   --container-color: #fff;
+  --bg-color: #787575;
 
   /*========== Font and typography ==========*/
   --body-font: 'Lato', sans-serif;
@@ -367,6 +368,28 @@ button {
 .products__card {
   background-color: var(--container-color);
   border-radius: 0.75rem;
+  transition: all 0.5s ease-in-out;
+  animation-name: slidein;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+.products__card:hover{
+  transform: translateX(10px);
+  box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+  filter: brightness(1.1);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 80%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .products__img {
@@ -379,14 +402,32 @@ button {
 }
 
 .products__price {
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   font-weight: 700;
 }
 
 .products__name {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
+  font-weight: 900;
 }
 
+.products__description{
+  margin-top: 10px;
+}
+
+.products__komposisi{
+  font-weight: 900;
+}
+
+.komposisi_list{
+  display: flex;
+  margin-left: 5px;
+  font-size: small;
+}
+
+.list_komp{
+  margin-left: 5px;
+}
 .products__button {
   border-radius: 50%;
   padding: 0.625rem;

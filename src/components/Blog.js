@@ -4,12 +4,12 @@ const Blog = () => {
   return (
     <section className="blog section" id="blog">
         <div class="blog__container container">
-          <h2 class="section__title" data-aos="fade-up-right" data-aos-duration="3000">
+          <h2 class="section__title" data-aos="fade-up-right" data-aos-duration="1500">
             Our healthy blogs with <br />
             insightful topic
           </h2>
 
-          <div class="blog__content grid" data-aos="fade-up" data-aos-duration="3000">
+          <div class="blog__content grid" data-aos="fade-up" data-aos-duration="1500">
             <article class="blog__card">
               <div class="blog__image">
                 <img src="./media/blog1.jpg" alt="" class="blog__img" />

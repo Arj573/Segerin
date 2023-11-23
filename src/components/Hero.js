@@ -21,7 +21,7 @@ const orderNow = () => {
     <section
     className="hero section"
     id="home"
-    style={{backgroundImage: 'url(./media/hero-bg.jpg)'}}
+    style={{backgroundImage: 'url(./media/herobg.jpeg)'}}
   >
     
     <h1 className="hero__title" data-aos="fade-down" data-aos-duration="3000">
